@@ -16,6 +16,7 @@
         --light-bg: #f4f7f9;
         --text-main: #333;
         --text-muted: #555;
+        --telegram-blue: #0088cc;
     }
 
     body {
@@ -74,6 +75,40 @@
     .btn-secondary:hover {
         background: var(--accent-blue);
         color: white;
+    }
+
+    /* Telegram Integration Styling */
+    .telegram-box {
+        background: #e1f5fe;
+        border: 1px solid var(--telegram-blue);
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .telegram-box p {
+        color: var(--primary-blue);
+        font-weight: bold;
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .join-btn {
+        display: inline-block;
+        background: var(--telegram-blue);
+        color: white;
+        text-decoration: none;
+        padding: 12px 40px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .join-btn:hover {
+        background: #0077b5;
+        transform: scale(1.05);
     }
 
     /* Sections */
@@ -209,6 +244,12 @@
         <a href="privacy.html" class="btn-secondary">Privacy Policy</a>
     </div>
 
+    <!-- Telegram Community Section -->
+    <div class="telegram-box">
+        <p>Join Our Telegram Community</p>
+        <a href="https://t.me/English_to_amharic_translate" class="join-btn" target="_blank">JOIN</a>
+    </div>
+
     <div class="section">
         <h2>Effortless Communication</h2>
         <p>
@@ -259,6 +300,7 @@
     </div>
 
     <div class="footer-links">
+        <a href="https://t.me/English_to_amharic_translate" target="_blank">Join Community</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="about.html">About Us</a>
         <a href="app-ads.txt">App-Ads.txt</a> 
